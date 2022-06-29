@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container mx-auto text-center">
+        <div class="row">
+            <div class="col-12"></div>
+            <h5>Form Validation - JS</h5>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4 position-relative">
+                      <label for="validationTooltip01" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="validationTooltip01" value="" required>
+                      <div class="valid-tooltip">
+                        Looks good!
+                      </div>
+                    </div>
+                    <!-- <div class="col-md-4 position-relative">
+                      <label for="validationTooltip02" class="form-label">Last name</label>
+                      <input type="text" class="form-control" id="validationTooltip02" value="" required>
+                      <div class="valid-tooltip">
+                        Looks good!
+                      </div>
+                    </div> -->
+                    <div class="col-md-4 position-relative">
+                      <label for="validationTooltipUsername" class="form-label">Username</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                        <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                        <div class="invalid-tooltip">
+                          Please choose a unique and valid username.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 position-relative">
+                        <label for="validationTooltipUsername" class="form-label">Password</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text" id="validationTooltipUsernamePrepend">#@$|&</span>
+                          <input type="password" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                          <div class="invalid-tooltip">
+                            Please choose a unique and valid Password or Passphrase.
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col-md-6 position-relative">
+                      <label for="validationTooltip03" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="validationTooltip03" required>
+                      <div class="invalid-tooltip">
+                        Please provide a valid Email.
+                      </div>
+                    </div>
+                    <div class="col-md-3 position-relative">
+                      <label for="validationTooltip04" class="form-label">Location</label>
+                      <select class="form-select" id="validationTooltip04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-tooltip">
+                        Please select a valid Location.
+                      </div>
+                    </div>
+                    <div class="col-md-3 position-relative">
+                      <label for="validationTooltip05" class="form-label">Phone</label>
+                      <input type="text" class="form-control" id="validationTooltip05" required>
+                      <div class="invalid-tooltip">
+                        Please provide a valid Phone No.
+                      </div>
+                    </div>
+                    <div class="col-md-3 position-relative">
+                        <label for="validationTooltip05" class="form-label">Website</label>
+                        <input type="url" class="form-control" id="validationTooltip05" required>
+                        <div class="invalid-tooltip">
+                          Please provide a valid URL.
+                        </div>
+                      </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Submit Form</button>
+                    </div>
+                  </form>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <span class="float-end mt-5" style="font-size: 10px;">Prepared by <em>Abu Hasan</em></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></scrip>
+    <script src="https://kit.fontawesome.com/f8261dd14c.js"></script>
+  </body>
+</html>
