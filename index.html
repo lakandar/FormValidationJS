@@ -13,18 +13,30 @@
             <h5 class="text-info">Form Validation - JS</h5>
         </div><hr class="text-info">
         <div class="row">
+
+            <header class="container">
+                <div id="success" class="alert alert-success alert-dismissible success" role="alert">
+                  <strong>Great!!!</strong> You just submitted everything okay! 
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                
+                <div id="failure" class="alert alert-danger alert-dismissible failure" role="alert">
+                  <strong>Ohh!</strong> Something wrong, Please fill up the form perfectly! 
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </header>
+
+
+
             <div class="col-12 col-sm-12 col-md-12">
 
                   <form class="row g-3 needs-validation" novalidate>
                     <div class="col-12 col-sm-12 col-md-6 position-relative">
                       <label for="validationTooltip01" class="form-label">Full Name</label>
                       <input type="text" class="form-control name-input" id="validationTooltip01" placeholder="Abdullah Al Mamun" required>
-                      <div class="invalid-feedback">
+                      <div class="invalid-tooltip">
                         Please provide valid name.
-                      </div>
-                      <div class="valid-feedback">
-                        Looks good.
-                      </div>
+                      </div>                      
                     </div>
                     <!-- <div class="col-md-4 position-relative">
                       <label for="validationTooltip02" class="form-label">Last name</label>
@@ -86,8 +98,8 @@
                       <div class="col-12 col-sm-12 col-md-12 position-relative">
                         <label for="validationTooltipUsername" class="form-label">Website</label>
                         <div class="input-group has-validation">
-                          <span class="input-group-text website-input" id="validationTooltipWebsitePrepend"><i class="fa-solid fa-globe"></i></span>
-                          <input type="url" class="form-control" id="validationTooltipWebsite" aria-describedby="validationTooltipWebsitePrepend" placeholder="www.abdullahalmamun.info" required>
+                          <span class="input-group-text" id="validationTooltipWebsitePrepend"><i class="fa-solid fa-globe"></i></span>
+                          <input type="url" class="form-control website-input" id="validationTooltipWebsite" aria-describedby="validationTooltipWebsitePrepend" placeholder="www.abdullahalmamun.info" required>
                           <div class="invalid-tooltip">
                             Please provide valid URL.
                           </div>
@@ -95,7 +107,7 @@
                       </div>                      
                     
                     <div class="col-12">
-                      <button class="btn btn-info sumbit-button" type="submit">Submit</button>
+                      <button class="btn btn-info submit-button" type="submit">Submit</button>
                     </div>
                   </form>
 
